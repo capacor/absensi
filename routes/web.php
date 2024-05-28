@@ -6,4 +6,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('attendances', 'AttendanceController');
+Route::resource('/attendances', \App\Http\Controllers\AttendanceController::class);
